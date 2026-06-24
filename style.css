@@ -176,3 +176,55 @@ header {
 .page2 h1 span {
   display: inline-block;
 }
+
+.testimonials {
+  height: 95vh;
+  width: calc(100% - 40px);
+  margin: 20px auto;
+  position: relative;
+}
+
+.video-container-ts {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  position: relative;
+}
+
+.video-container-ts video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-ts {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 30px;
+  z-index: 2;
+}
+
+.text-ts {
+  height: 45vh;
+  width: 100%;
+  border-top: 2px solid #fff;
+  border-top-left-radius: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.text-ts h1 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1;
+}
