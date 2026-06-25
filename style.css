@@ -228,3 +228,176 @@ header {
   font-weight: 500;
   line-height: 1;
 }
+
+.small-team {
+    height: 60
+    vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.corner-box {
+    position: relative;
+    padding: 40px 80px;
+}
+
+.corner-box h2 {
+    font-size: 3.5vw;
+    font-weight: 400;
+    line-height: 0.95;
+    text-align: center;
+    color: #073b3a;
+    letter-spacing: -0.04em;
+}
+
+.corner {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-color: rgba(7, 59, 58, 0.25);
+    border-style: solid;
+}
+
+.tl {
+    top: 0;
+    left: 0;
+    border-width: 3px 0 0 3px;
+    border-top-left-radius: 20px;
+}
+
+.tr {
+    top: 0;
+    right: 0;
+    border-width: 3px 3px 0 0;
+    border-top-right-radius: 20px;
+}
+
+.bl {
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 3px 3px;
+    border-bottom-left-radius: 20px;
+}
+
+.br {
+    bottom: 0;
+    right: 0;
+    border-width: 0 3px 3px 0;
+    border-bottom-right-radius: 20px;
+}
+
+.corner-box h2 span {
+    display: inline-block;
+}
+
+.corner-box h2{
+    font-size: 96px;
+    max-width: 500px;
+}
+
+.vision {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.left-vision,
+.right-vision {
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+
+.left-vision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar-line {
+  height: 70vh;
+  width: 4px;
+  background-color: rgb(221, 220, 220);
+  position: absolute;
+  left: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50px;
+}
+
+.progress-fill {
+  width: 100%;
+  height: 0%;
+  background-color: #61e5c0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+}
+
+.progress-bar-line img {
+  height: 2.5rem;
+  width: 2.5rem;
+  object-fit: contain;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.vision-text-container {
+  width: 70%;
+  position: absolute;
+  left: 18%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: roobertregular;
+  opacity: 0;
+}
+
+.vtc1 {
+  opacity: 1;
+}
+
+.vision-text-container h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  color: #082c28;
+}
+
+.vision-text-container p {
+  width: 80%;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #082c28;
+}
+
+.right-vision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  height: 80vh;
+  width: 80%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.image-scroll-div {
+  width: 100%;
+}
+
+.image-scroll-div img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}

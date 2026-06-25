@@ -119,3 +119,92 @@ gsap.from(".text-ts h1", {
     scrub: 2
   }
 });
+
+// ===================== Vision Section =====================
+
+let visionTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".vision",
+        start: "top top",
+        end: "+=2400",
+        scrub: 2,
+        pin: true
+    }
+});
+
+visionTl
+
+.to(".progress-bar-line img", {
+    top: "100%",
+    duration: 4,
+    ease: "none"
+}, "vision")
+
+.to(".progress-fill", {
+    height: "100%",
+    duration: 4,
+    ease: "none"
+}, "vision")
+
+// 1 -> 2
+.to(".vtc1", {
+    opacity: 0,
+    y: -50
+}, 0.8)
+
+.fromTo(".vtc2",
+{
+    opacity: 0,
+    y: 50
+},
+{
+    opacity: 1,
+    y: 0
+}, 0.8)
+
+.to(".image-scroll-div", {
+    y: "-80vh",
+    ease: "none"
+}, 0.8)
+
+// 2 -> 3
+.to(".vtc2", {
+    opacity: 0,
+    y: -50
+}, 1.8)
+
+.fromTo(".vtc3",
+{
+    opacity: 0,
+    y: 50
+},
+{
+    opacity: 1,
+    y: 0
+}, 1.8)
+
+.to(".image-scroll-div", {
+    y: "-160vh",
+    ease: "none"
+}, 1.8)
+
+// 3 -> 4
+.to(".vtc3", {
+    opacity: 0,
+    y: -50
+}, 2.8)
+
+.fromTo(".vtc4",
+{
+    opacity: 0,
+    y: 50
+},
+{
+    opacity: 1,
+    y: 0
+}, 2.8)
+
+.to(".image-scroll-div", {
+    y: "-240vh",
+    ease: "none"
+}, 2.8);
