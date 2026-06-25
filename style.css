@@ -401,3 +401,55 @@ header {
   object-fit: cover;
   display: block;
 }
+
+.pop-section{
+    width:100%;
+    height:100vh;
+    background:#d8ece7;
+    padding:24px 16px;
+    display:grid;
+    grid-template-columns: 59% 41%;
+    gap:6px;
+}
+
+.pop-left{
+    width:100%;
+    height:100%;
+    border-radius:6px;
+    overflow:hidden;
+}
+
+.pop-left img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center; 
+    display:block;
+}
+
+.pop-right{
+    height:100%;
+    border-radius:6px;
+    background:#d8ece7;
+    padding:45px 60px;
+    font-family:roobertregular, Arial, sans-serif;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.pop-right h1{
+    font-size:40px;
+    font-weight:400;
+    line-height:1.3;
+    color:#073b38;
+    width:90%;
+}
+
+.pop-right p{
+    font-size:25px;
+    line-height:1.15;
+    color:#47736f;
+    width:95%;
+    margin-bottom:10px;
+}
