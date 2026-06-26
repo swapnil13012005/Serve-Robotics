@@ -453,3 +453,97 @@ header {
     width:95%;
     margin-bottom:10px;
 }
+
+.Parallax{
+    height: 140vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: roobertregular, Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.Parallax h1{
+    color: #063c37;
+    text-align: center;
+    font-size: 62px;
+    line-height: 0.95;
+    font-weight: 400;
+    margin-bottom: 35px;
+    z-index: 2;
+}
+
+.Parallax p{
+    font-size: 20px;
+    color: #063c37;
+    z-index: 2;
+}
+
+.Parallax p span{
+    background: #d7efeb;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.parallax-images{
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.parallax-images video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pi1{
+    top: 2%;
+    left: 22%;
+}
+
+.pi2{
+    top: 4%;
+    right: 17%;
+    height: 270px;
+}
+
+.pi3{
+    top: 40%;
+    left: -1%;
+}
+
+.pi4{
+    top: 44%;
+    right: -2%;
+}
+
+.pi5{
+    bottom: 1%;
+    left: 22%;
+}
+
+.pi6{
+    bottom: 2%;
+    right: 17%;
+    height: 160px;
+}
+
+.canvas-section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+canvas{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}

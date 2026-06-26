@@ -208,3 +208,68 @@ visionTl
     y: "-240vh",
     ease: "none"
 }, 2.8);
+
+const canvas = document.querySelector("canvas");
+const context = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const frameCount = 85;
+
+const imageSeq = {
+    frame: 0
+};
+
+const currentFrame = (index) =>
+    `./images/ezgif-frame-${String(index + 1).padStart(3, "0")}.jpg`;
+
+const images = [];
+
+for (let i = 0; i < frameCount; i++) {
+    const img = new Image();
+    img.src = currentFrame(i);
+    images.push(img);
+}
+
+images.forEach((img, i) => {
+    img.onload = () => {
+        console.log("Loaded:", i);
+
+
+        if (i === 0) render();
+    };
+
+    img.onerror = () => {
+        console.log("Error:", i, img.src);
+    };
+});
+
+function render() {
+    if (!images[imageSeq.frame]) return;
+
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    context.drawImage(
+        images[imageSeq.frame],
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+}
+gsap.to(imageSeq, {
+    frame: frameCount - 1,
+    snap: "frame",
+    ease: "none",
+    onUpdate: render,
+
+    scrollTrigger: {
+        trigger: ".canvas-section",
+        start: "top top",
+        end: "+=2000",
+        scrub: 1,
+        pin: true,
+        // markers: true
+    }
+});
