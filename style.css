@@ -230,8 +230,7 @@ header {
 }
 
 .small-team {
-    height: 60
-    vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
